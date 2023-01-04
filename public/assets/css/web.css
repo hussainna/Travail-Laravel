@@ -1,0 +1,40 @@
+
+.posts{
+    height: 150vh;
+    background-color: black;
+  }
+  .posts h4{
+    margin-top: 10px;
+  }
+  .posts li{
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .posts i{
+    font-size: 20px;
+  }
+  .posts .media{
+    display: flex;
+    align-items: center;
+  }
+  .posts .container{
+    margin-bottom: 100px;
+    width: 40%;
+    padding-top: 170px;
+    align-items: center;
+    text-align: center;
+  }
+  .posts h2{
+    font-size: 30px;
+  }
+  .posts .col{
+    text-align: left;
+    border: white solid 1px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+  }
+  .posts span{
+    margin-top: 10px;
+  }

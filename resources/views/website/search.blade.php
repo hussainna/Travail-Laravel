@@ -1,0 +1,91 @@
+@extends('website.master')
+@section('content')
+
+
+<section class="hero posts" id="home">
+        <div class="container">
+
+          <h2 class="h1">The Posts</h3>
+
+          <div class="row">
+            @foreach($travail as $t)
+            <div class="col">
+                <h4>name: {{$t->name}}</h4>
+                <h4>Going From {{$t->from_city}} And Going To {{$t->to_city}}</h4>
+                <p>{{$t->description}}</p>
+                <ul>
+                    <li>Date:- {{$t->from_date}}</li>
+                    <div class="media">
+                    <i class="fa-brands fa-facebook"></i>
+
+                    <li>Facebook:- 
+                    <?php
+                  if(isset($t->facebook)){
+                     echo $t->facebook;
+                  }
+                  else
+                  {
+                    echo 'facebook not set';
+                  }
+                  ?>
+                    </li>
+                    </div>
+                    
+
+                    <div class="media">
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <li>instagram:-
+                    <?php
+                  if(isset($t->instagram)){
+                    echo $t->instagram;
+                  }
+                  else
+                  {
+                    echo 'instagram not set';
+                  }
+                  ?>
+                    </li>
+                    </div>
+
+                    <div class="media">
+                    <i class="fa-brands fa-snapchat"></i>
+
+                    <li>snapchat:-
+                    <?php
+                  if(isset($t->snap)){
+                    echo $t->snap;
+                  }
+                  else
+                  {
+                    echo 'snapchat not set';
+                  }
+                  ?>
+                    </li>
+                    </div>
+                    
+
+                </ul>
+                <span>phone:
+                  <?php
+                  if(isset($t->phone)){
+                    echo $t->phone;
+                  }
+                  else
+                  {
+                    echo 'phone not set';
+                  }
+                  ?>
+                </span>
+                <span>email:{{$t->email}}</span>
+
+
+            </div>
+            @endforeach
+            
+          </div>
+        </div>
+      </section>
+
+
+@endsection
