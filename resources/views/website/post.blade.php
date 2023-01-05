@@ -10,11 +10,11 @@
           <div class="row">
             @foreach($travail as $t)
             <div class="col">
-                <h4>name: {{$t->name}}</h4>
-                <h4>Going From {{$t->from_city}} And Going To {{$t->to_city}}</h4>
-                <p>Description:- {{$t->description}}</p>
+                <h4>{{__('words.name')}}: {{$t->name}}</h4>
+                <h4> {{__('words.from city post')}} {{$t->from_city}} {{__('words.to city post')}}{{$t->to_city}}</h4>
+                <p>{{__('words.description')}}:- {{$t->description}}</p>
                 <ul>
-                    <li>Date:- {{$t->from_date}}</li>
+                    <li>{{__('words.from date')}}:- {{$t->from_date}}</li>
                     <div class="media">
                     <i class="fa-brands fa-facebook"></i>
 
@@ -66,7 +66,7 @@
                     
 
                 </ul>
-                <span>phone:
+                <span>{{__('words.phone')}}:
                   <?php
                   if(isset($t->phone)){
                     echo $t->phone;
@@ -77,7 +77,7 @@
                   }
                   ?>
                 </span>
-                <span>email:{{$t->email}}</span>
+                <span>{{__('words.email')}}:{{$t->email}}</span>
 
 
             </div>

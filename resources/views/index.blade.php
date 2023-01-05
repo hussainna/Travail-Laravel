@@ -6,12 +6,10 @@
       <section class="hero" id="home">
         <div class="container">
 
-          <h2 class="h1 hero-title">Journey to explore world</h2>
+          <h2 class="h1 hero-title">{{__('words.heroTitle')}}</h2>
 
           <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+            {{__('words.heroDescription')}}
           </p>
 
           <div class="btn-group">
@@ -36,14 +34,11 @@
       <section class="popular" id="destination">
         <div class="container">
 
-          <p class="section-subtitle">Uncover place</p>
 
-          <h2 class="h2 section-title">Popular destination</h2>
+          <h2 class="h2 section-title">{{__('words.popular')}}</h2>
 
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            {{__('words.Popular Description')}}
           </p>
 
           <ul class="popular-list">
@@ -172,12 +167,10 @@
 
           <p class="section-subtitle">Photo Gallery</p>
 
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
+          <h2 class="h2 section-title">{{__('words.photo title')}}</h2>
 
           <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
+            {{__('words.photo description')}}
           </p>
 
           <ul class="gallery-list">
@@ -229,14 +222,11 @@
         <div class="container">
 
           <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
 
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
+            <h2 class="h2 section-title">{{__('words.ready')}}</h2>
 
             <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
+              {{__('words.ready description')}}
             </p>
           </div>
 

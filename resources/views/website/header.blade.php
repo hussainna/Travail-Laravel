@@ -61,6 +61,24 @@
         </a>
       </li>
 
+      <li>
+      <div class="dropdown ">
+      <ion-icon name="globe-outline" style='font-size:18px' class='social-link '></ion-icon>
+
+      <div class="dropdown-content">
+      <ul>
+        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <li>
+            <a rel="alternate" class='languageItem' hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                {{ $properties['native'] }}
+            </a>
+        </li>
+          @endforeach
+    </ul>
+      </div>
+      </div>
+     
+      </li>
     </ul>
 
     <nav class="navbar" data-navbar>

@@ -19,9 +19,21 @@ use App\Http\Controllers\TravailController;
 //     return view('welcome');
 // });
 
+
+// Route::get('/',function(){
+//     return app()->getLocale();
+// });
+
+Route::group(
+    ['middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]], function(){ 
+
+        
 Route::get('/', function () {
     return view('index');
 });
+
+    });
+
 Auth::routes();
 // Route::get('/login',[WebsiteController::class,'login']);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
